@@ -9,7 +9,7 @@ m=Basemap(llcrnrlon=-172, llcrnrlat=62.7, # corner 1
           resolution='h',
           projection='mill')
 
-# Continent in green
+# Continent in grey (change colors using hex codes if you want them to differ)
 m.fillcontinents(color='#808080', lake_color='#d3d3d3')
 m.drawcountries()
 m.drawrivers()
@@ -19,19 +19,19 @@ m.drawcoastlines(color='black', linewidth=1)
 
 locations = [
     {
-        "coordinates": (-168.6922, 63.2950),
-        "label_coordinates": (-168.6922 + 0.05, 63.2950),
-        "label": "Northeast\nCape",
-    },
-    {
         "coordinates": (-171.7411, 63.7797),
-        "label_coordinates": (-171.7411, 63.7797 + 1.3),
+        "label_coordinates": (-171.7411 + 0.08, 63.7797 + 0.08),
         "label": "Gambell",
     },
     {
         "coordinates": (-170.4789, 63.6942),
-        "label_coordinates": (-170.4789, 63.6942 + 1.3),
+        "label_coordinates": (-170.4789 + 0.08, 63.6942 + 0.08),
         "label": "Savoonga",
+    },
+    {
+        "coordinates": (-168.6922, 63.2950),
+        "label_coordinates": (-168.6922 + 0.05, 63.2950),
+        "label": "Northeast\nCape",
     },
 ]
 
